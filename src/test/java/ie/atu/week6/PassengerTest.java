@@ -15,10 +15,15 @@ class PassengerTest {
     }
 
     @Test
-    void TestgetTitle(){
-        assertEquals("Mr",myPass.getTitle("Mr"));
-        assertEquals("Mrs",myPass.getTitle("Mrs"));
-        assertEquals("Ms",myPass.getTitle("Ms"));
+    void testGetTitle(){
+        assertEquals("Mr",myPass.GetTitle("Mr"));
+        assertEquals("Mrs",myPass.GetTitle("Mrs"));
+        assertEquals("Ms",myPass.GetTitle("Ms"));
+    }
+
+    @Test
+    void testGetName(){
+        assertEquals("Eoin",myPass.GetName("Eoin"));
     }
 
     @AfterEach
